@@ -1,29 +1,26 @@
-#include <iostream>
+#include "Labwork1/Lab1.cpp"
+#include "Labwork2_1/Lab2_1.cpp"
+#include "Labwork2_2/Lab2_2.cpp"
 
 int main() {
-    int choice = 0;
-    float x = 0, y = 0;
-    start:std::cout << "Choice operation\n[1] Enter (X, Y)\n[2] Check point\n[3] Exit\n";
-    std::cin >> choice;
-
-    switch (choice) {
+    int select = 0;
+    start:std::cout << "Select lab\n[1] Lab1\n[2] Lab2_1\n[3] Lab2_2\n";
+    std::cin >> select;
+    switch(select){
         case 1:
-            std::cout << "Enter (x):";
-            std::cin >> x;
-            std::cout << "Enter (y):";
-            std::cin >> y;
-            std::cout << "\nYour pair (" << x << ", " << y << ")\n\n";
+            Lab1();
             break;
         case 2:
-            y <= std::abs(x) && y >= -std::abs(x) ? std::cout << "\nThe point falls into the shaded area\n\n"
-            : std::cout << "\nThe point don't falls into the shaded area\n\n";
+            Lab2_1();
             break;
         case 3:
-            std::cout << "Exit\n";
+            Lab2_2();
+            break;
+        case 4:
             exit(EXIT_SUCCESS);
         default:
             std::cout << "Wrong choice\n";
     }
     goto start;
-
+    return 0;
 }

@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: CLionProjects
+# Project: Labwork
 # Configurations: Debug
 # =============================================================================
 
@@ -39,52 +39,46 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/KRESTALL/CLionProjects/cmake-build-debug/
+cmake_ninja_workdir = D$:/projects/Labwork/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target CLionProjects
+# Object build statements for EXECUTABLE target Labwork
 
 
 #############################################
-# Order-only phony target for CLionProjects
+# Order-only phony target for Labwork
 
-build cmake_object_order_depends_target_CLionProjects: phony || CMakeFiles/CLionProjects.dir
+build cmake_object_order_depends_target_Labwork: phony || CMakeFiles/Labwork.dir
 
-build CMakeFiles/CLionProjects.dir/main.cpp.obj: CXX_COMPILER__CLionProjects_Debug C$:/Users/KRESTALL/CLionProjects/main.cpp || cmake_object_order_depends_target_CLionProjects
-  DEP_FILE = CMakeFiles\CLionProjects.dir\main.cpp.obj.d
+build CMakeFiles/Labwork.dir/main.cpp.obj: CXX_COMPILER__Labwork_Debug D$:/projects/Labwork/main.cpp || cmake_object_order_depends_target_Labwork
+  DEP_FILE = CMakeFiles\Labwork.dir\main.cpp.obj.d
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles\CLionProjects.dir
-  OBJECT_FILE_DIR = CMakeFiles\CLionProjects.dir
-
-build CMakeFiles/CLionProjects.dir/untitled/cmake-build-debug/superV.cpp.obj: CXX_COMPILER__CLionProjects_Debug C$:/Users/KRESTALL/CLionProjects/untitled/cmake-build-debug/superV.cpp || cmake_object_order_depends_target_CLionProjects
-  DEP_FILE = CMakeFiles\CLionProjects.dir\untitled\cmake-build-debug\superV.cpp.obj.d
-  FLAGS = -g
-  OBJECT_DIR = CMakeFiles\CLionProjects.dir
-  OBJECT_FILE_DIR = CMakeFiles\CLionProjects.dir\untitled\cmake-build-debug
+  OBJECT_DIR = CMakeFiles\Labwork.dir
+  OBJECT_FILE_DIR = CMakeFiles\Labwork.dir
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target CLionProjects
+# Link build statements for EXECUTABLE target Labwork
 
 
 #############################################
-# Link the executable CLionProjects.exe
+# Link the executable Labwork.exe
 
-build CLionProjects.exe: CXX_EXECUTABLE_LINKER__CLionProjects_Debug CMakeFiles/CLionProjects.dir/main.cpp.obj CMakeFiles/CLionProjects.dir/untitled/cmake-build-debug/superV.cpp.obj
+build Labwork.exe: CXX_EXECUTABLE_LINKER__Labwork_Debug CMakeFiles/Labwork.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\CLionProjects.dir
+  OBJECT_DIR = CMakeFiles\Labwork.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_FILE = CLionProjects.exe
-  TARGET_IMPLIB = libCLionProjects.dll.a
-  TARGET_PDB = CLionProjects.exe.dbg
+  TARGET_FILE = Labwork.exe
+  TARGET_IMPLIB = libLabwork.dll.a
+  TARGET_PDB = Labwork.exe.dbg
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\KRESTALL\CLionProjects\cmake-build-debug && "D:\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D D:\projects\Labwork\cmake-build-debug && "D:\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -95,7 +89,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\KRESTALL\CLionProjects\cmake-build-debug && "D:\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SC:\Users\KRESTALL\CLionProjects -BC:\Users\KRESTALL\CLionProjects\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D D:\projects\Labwork\cmake-build-debug && "D:\CLion 2022.2.3\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -SD:\projects\Labwork -BD:\projects\Labwork\cmake-build-debug"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -105,7 +99,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build CLionProjects: phony CLionProjects.exe
+build Labwork: phony Labwork.exe
 
 # =============================================================================
 # Folder targets.
@@ -113,9 +107,9 @@ build CLionProjects: phony CLionProjects.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/KRESTALL/CLionProjects/cmake-build-debug
+# Folder: D:/projects/Labwork/cmake-build-debug
 
-build all: phony CLionProjects.exe
+build all: phony Labwork.exe
 
 # =============================================================================
 # Built-in targets
