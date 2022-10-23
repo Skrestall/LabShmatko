@@ -1,3 +1,0 @@
-D:/projects/Labwork/cmake-build-debug/CMakeFiles/Labwork.dir
-D:/projects/Labwork/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/projects/Labwork/cmake-build-debug/CMakeFiles/rebuild_cache.dir
